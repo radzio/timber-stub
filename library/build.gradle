@@ -1,12 +1,5 @@
-apply plugin: 'com.android.library'
+apply plugin: 'java'
 
 repositories {
     mavenCentral()
 }
-
-android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
-}
-
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
