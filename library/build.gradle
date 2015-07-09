@@ -3,6 +3,7 @@ apply plugin: 'maven'
 
 group = 'com.github.radzio'
 
+sourceCompatibility = 1.7
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
