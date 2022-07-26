@@ -21,4 +21,14 @@ repositories {
     mavenCentral()
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.radzio"
+            artifactId = "timber-stub"
+            version = "0.0.7"
 
+            from(components["java"])
+        }
+    }
+}
