@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.github.radzio'
-
+version = '0.0.7'
 sourceCompatibility = 1.8
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -23,12 +23,8 @@ repositories {
 
 publishing {
     publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.radzio"
-            artifactId = "timber-stub"
-            version = "0.0.7"
-
-            from(components["java"])
+        maven(MavenPublication) {
+            from components.java
         }
     }
 }
